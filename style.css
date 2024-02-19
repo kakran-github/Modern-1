@@ -39,11 +39,11 @@ nav{
     padding: 3vw 3vw;
 }
 nav h5{
-    font-size: 16px;
+    font-size: 18px;
 }
 nav i{
     font-weight: lighter;
-    font-size: 0.8vw;
+    font-size: 13px;
 }
 .introdiv{
     width: fit-content;
@@ -72,9 +72,9 @@ nav i{
     padding-top: 1.4vw;
 }
 .workdiv h5{
-    font-size: 1vw;
+    font-size: 17.8px;
     text-align: right;
-    line-height: 2.3;
+    line-height: 2.2;
 }
 .bottom-page1{
     width: 100vw;
@@ -86,7 +86,7 @@ nav i{
     bottom: 3%;
 }
 .bottom-page1 h5{
-    font-size: 1vw;
+    font-size: 17.8px;
 }
 .arrow i{
     padding: 0.3vw 0.3vw;
@@ -114,13 +114,13 @@ nav i{
     position: relative;
     width: 100%;
     height: 15.5vw;
-    border-top: 1px solid #ffffffa6;
+    border-top: 1px solid #ffffffb3;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 #lastboxpage3{
-    border-bottom: 1px solid #ffffffa6;
+    border-bottom: 1px solid #ffffffb3;
 }
 .boxpage2 h1{
     font-size: 7.2vw;
@@ -130,4 +130,84 @@ nav i{
     height: 130%;
     position: absolute;
     display: none;
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding-top: 15.77vw;
+    background-color: #000000;
+}
+.aboutus{
+    height: 50vh;
+    width: 100vw;
+    gap: 70px;
+    display: flex;
+    /* background-color: red; */
+    margin-bottom: 6vw;
+}
+.leftabout{
+    height: 100%;
+    width: 55%;
+    /* background-color: aquamarine; */
+}
+.rightabout{
+    height: 100%;
+    width: 45%;
+    /* background-color: bisque; */
+}
+.leftabout img{
+    height: 64%;
+    padding-left: 37.6vw;
+}
+.rightabout{
+    width: 31rem;
+}
+.rightabout h5{
+    color: white;
+    opacity: 0.7;
+    margin-bottom: 0.3vw;
+    font-size: 15.5px;
+}
+.rightabout p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 1.65vw;
+}
+.rightabout a{
+    /* background-color: red; */
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 8px 25px;
+    text-decoration: none;
+}
+.subscribe{
+    width: 100vw;
+    height: 4vw;
+    /* background-color: red; */
+    padding: 0vw 3vw;
+}
+.subscribe h4{
+    opacity: 0.7;
+    margin-bottom: 0.4vw;
+    font-size: 15.4px;
+    font-weight: 200;
+}
+.subscribe h3{
+    font-size: 17px;
+}
+.subscribe i{
+    font-weight: lighter;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vw;
+    width: 100vw;
+    background-color: rebeccapurple;
+}
+.leftfooter{
+    display: flex;
 }
