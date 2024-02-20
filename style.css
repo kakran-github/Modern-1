@@ -214,13 +214,14 @@ nav i{
 .subscribe i{
     font-weight: lighter;
 }
-footer{
+.footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4vw;
+    height: 4.3vw;
     width: 100vw;
     background-color: #000000;
+    /* background-color: red   ; */
     padding: 0vw 3vw;   
 }
 .leftfooter{

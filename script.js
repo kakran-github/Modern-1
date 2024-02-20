@@ -6,7 +6,7 @@
   
   // Convert hours to 12-hour format
   hours = hours % 12;
-  hours = hours ? hours : 12; // Handle midnight (0 hours)
+  // hours = hours ? hours : 12; // Handle midnight (0 hours)
   
   // Add leading zeros if necessary
   // hours = (hours < 10) ? '0' + hours : hours;
