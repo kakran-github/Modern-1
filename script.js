@@ -38,4 +38,28 @@
    }
    mousefollower()
 
-// 4. 
+// 4. Gsap Timeline
+
+   function firstpageanimation(){
+    var tl=gsap.timeline();
+  
+    tl.to(".boundingelem",{
+      y:0,
+      ease:Expo.easeInOut,
+      duration:2,
+      stagger:.2
+    })
+    tl.to(".boundingelemdown",{
+      y:0,
+      ease:Expo.easeInOut,
+      duration:2,
+      stagger:.2
+    },"-=1.5")
+    //delay negative me also you can give instead of =-1.5
+    tl.from(".bottom-page1",{
+      opacity:0,
+      duration:1.5,
+      ease:Expo.easeInOut,
+    },"-=1.3")
+   }
+   firstpageanimation();
