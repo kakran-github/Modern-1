@@ -21,7 +21,38 @@
       smooth: true
   });
 
-// 3. Making moving minicursor
+// 3. Circle Chapta
+  function CircleChapta(){
+    var xscale=1;
+    var yscale=1;
+
+    var xprev=0;
+    var yprev=0;
+    // var timeout=null;
+    window.addEventListener("mousemove",function(dets){
+      // clearTimeout(timeout);
+
+      xdiff=dets.clientX-xprev;
+      ydiff=dets.clientY-yprev;
+
+      xprev=dets.clientX;
+      yprev=dets.clientY;
+
+      xscale=gsap.utils.clamp(0.8,1.2,xdiff);
+      yscale=gsap.utils.clamp(0.8,1.2,ydiff);
+
+      mousefollower(xscale,yscale);
+
+      // timeout=setTimeout(function(){
+      //   document.querySelector("#minicircle").style.transform=`translate(${dets.clientX}px,${dets.clientY}px) scale(1,1)`;
+      // }, 100);
+    })
+
+    
+  }
+  CircleChapta();
+
+// 4. Making moving minicursor
    var crsr=document.querySelector("#minicircle");
 
 // window.addEventListener("mousemove",function(dets){
@@ -31,14 +62,15 @@
 
 // or
 
-   function mousefollower(){
+   function mousefollower(xscale,yscale){
        window.addEventListener("mousemove",function(dets){
-           crsr.style.transform=`translate(${dets.clientX}px,${dets.clientY}px)`;
+           crsr.style.transform=`translate(${dets.clientX}px,${dets.clientY}px) scale(${xscale},${yscale})`;
        })
    }
-   mousefollower()
 
-// 4. Gsap Timeline
+   mousefollower();
+
+// 5. Gsap Timeline
 
    function firstpageanimation(){
     var tl=gsap.timeline();
@@ -62,4 +94,5 @@
       ease:Expo.easeInOut,
     },"-=1.3")
    }
-   firstpageanimation();
+   firstpageanimation(); 
+
