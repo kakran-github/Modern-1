@@ -23,29 +23,31 @@
 
 // 3. Circle Chapta
   function CircleChapta(){
+   var crsr2=document.querySelector("#minicircle");
+
     var xscale=1;
     var yscale=1;
 
     var xprev=0;
     var yprev=0;
-    // var timeout=null;
+    var timeout=null;
     window.addEventListener("mousemove",function(dets){
-      // clearTimeout(timeout);
+      clearTimeout(timeout);
 
       xdiff=dets.clientX-xprev;
       ydiff=dets.clientY-yprev;
 
-      xprev=dets.clientX;
-      yprev=dets.clientY;
-
       xscale=gsap.utils.clamp(0.8,1.2,xdiff);
       yscale=gsap.utils.clamp(0.8,1.2,ydiff);
 
+      xprev=dets.clientX;
+      yprev=dets.clientY;
+
       mousefollower(xscale,yscale);
 
-      // timeout=setTimeout(function(){
-      //   document.querySelector("#minicircle").style.transform=`translate(${dets.clientX}px,${dets.clientY}px) scale(1,1)`;
-      // }, 100);
+      timeout=setTimeout(function(){
+        crsr2.style.transform=`translate(${dets.clientX}px,${dets.clientY}px) scale(1,1)`;
+      },100);
     })
 
     
