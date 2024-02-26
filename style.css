@@ -20,8 +20,8 @@ html,body{
 #minicircle{
     /* transition: all linear 0.2s; */
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
-    width: 12px;
-    height: 12px;
+    width: 12.5px;
+    height: 12.5px;
     border-radius: 50%;
     z-index: 99999;
     background-color: white;
@@ -156,9 +156,12 @@ html,body{
     opacity: 0.6;
 }
 .boxpage2 img{
+    opacity: 0;
+    pointer-events: none;
     height: 130%;
+    z-index: 999;
     position: absolute;
-    display: none;
+    transform: translate(-50%, -50%);
 }
 
 .page3{
